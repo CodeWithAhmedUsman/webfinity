@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Devixo Solutions builds thoughtful digital experiences and modern websites for ambitious teams.">
+    <title>Digital ideas, built with purpose | Webfinity.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="wrap nav"><a class="logo" href="index.html">Webfinity<i>.</i></a>
+        <nav class="links"><a class="active" href="index.html">Home</a><a class="" href="about.html">About</a><a
+                class="" href="services.html">Services</a><a class="" href="portfolio.html">Portfolio</a><a class=""
+                href="contact.html">Contact</a></nav>
+        <div class="nav-actions"><button class="iconbtn theme" aria-label="Toggle dark mode">☾</button><a class="btn"
+                href="contact.html">Let's talk <span>↗</span></a><button class="menu"
+                aria-label="Open navigation">☰</button></div>
+    </header>
+    <main>
+        <section class="wrap hero">
+            <div><span class="eyebrow">Independent digital studio</span>
+                <h1>Make your next<br>move <em class="typing">matter.</em></h1>
+                <p>We turn ambitious ideas into clear, useful digital experiences. Strategy, design, and development in
+                    one thoughtful team.</p>
+                <div class="hero-cta"><a class="btn light" href="services.html">Explore our services
+                        <span>↗</span></a><a href="portfolio.html">See our work&nbsp; →</a></div>
+                <p style="font-size:12px;margin-top:28px">Trusted by teams building what comes next.</p>
+            </div>
+            <div class="slider">
+                <div class="slide-controls"><button aria-label="Previous slide" class="prev">←</button><button
+                        aria-label="Next slide" class="next">→</button></div>
+                <div class="slidecopy"><small class="slidekicker">01 / SELECTED WORK</small>
+                    <h3 class="slidetitle">A clearer path to growth</h3><span class="slidedesc">Brand strategy · Digital
+                        experience</span>
+                </div>
+            </div>
+        </section>
+        <section class="wrap section">
+            <div class="sectionhead">
+                <div><span class="eyebrow">What we do</span>
+                    <h2>Good work starts<br>with good questions.</h2>
+                </div>
+                <p>We pair sharp thinking with careful craft to help your business connect, grow, and keep moving.</p>
+            </div>
+            <div class="grid3">
+                <article class="card reveal"><span class="num">01 — STRATEGY</span>
+                    <h3>Find your direction</h3>
+                    <p>Research, positioning, and a practical roadmap that gives the next step a clear purpose.</p>
+                </article>
+                <article class="card reveal"><span class="num">02 — DESIGN</span>
+                    <h3>Make it memorable</h3>
+                    <p>Distinctive identities and intuitive interfaces that feel right and work beautifully.</p>
+                </article>
+                <article class="card reveal"><span class="num">03 — DEVELOPMENT</span>
+                    <h3>Build for what’s next</h3>
+                    <p>Responsive websites and digital products made to perform, adapt, and last.</p>
+                </article>
+            </div>
+            <div class="stats">
+                <div class="stat"><strong data-count="36">0</strong><span>Projects delivered</span></div>
+                <div class="stat"><strong data-count="14">0</strong><span>Partners worldwide</span></div>
+                <div class="stat"><strong data-count="8">0</strong><span>Years of experience</span></div>
+                <div class="stat"><strong data-count="96">0</strong><span>% partner referrals</span></div>
+            </div>
+            <div class="sectionhead">
+                <div><span class="eyebrow">A few good questions</span>
+                    <h2>Curious? Start here.</h2>
+                </div><a href="about.html#faq">More about us →</a>
+            </div>
+            <div class="faq">
+                <details>
+                    <summary>Who do you work with?</summary>
+                    <p>We work with founders, growing companies, and established teams looking to make their digital
+                        experience clearer and more effective.</p>
+                </details>
+                <details>
+                    <summary>How does a project begin?</summary>
+                    <p>We start with a short conversation about your goals, audience, timeline, and what success should
+                        look like.</p>
+                </details>
+                <details>
+                    <summary>Can you work with our existing team?</summary>
+                    <p>Yes. We can lead a project end to end or join your team for a focused strategy, design, or
+                        development engagement.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+    <footer class="wrap footer"><span>© 2026 Webfinity.</span><span>Thoughtful design. Useful
+            technology.</span><span>Karachi · Working worldwide</span></footer><button class="top"
+        aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+    <script>const slides = [['01 / SELECTED WORK', 'A clearer path to growth', 'Brand strategy · Digital experience'], 
+    ['02 / DIGITAL PRODUCT', 'A simpler way to get there', 'Product design · Development'], ['03 / BRAND EXPERIENCE', 
+    'Built to stand out and scale', 'Identity · Web experience']]; let n = 0; function setSlide(d) 
+    { n = (n + d + slides.length) % slides.length; document.querySelector('.slidekicker').textContent = slides[n][0]; document.querySelector
+    ('.slidetitle').textContent = slides[n][1]; document.querySelector('.slidedesc').textContent = slides[n][2] } document.querySelector('.next').onclick = 
+    () => setSlide(1); document.querySelector('.prev').onclick = () => setSlide(-1); setInterval(() => setSlide(1), 6000);</script>
+</body>
+
+</html>

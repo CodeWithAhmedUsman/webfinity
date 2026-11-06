@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Devixo Solutions builds thoughtful digital experiences and modern websites for ambitious teams.">
+    <title>Let’s talk | Webfinity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="wrap nav"><a class="logo" href="index.html">Webfinity<i>.</i></a>
+        <nav class="links"><a class="" href="index.html">Home</a><a class="" href="about.html">About</a><a class=""
+                href="services.html">Services</a><a class="" href="portfolio.html">Portfolio</a><a class="active"
+                href="contact.html">Contact</a></nav>
+        <div class="nav-actions"><button class="iconbtn theme" aria-label="Toggle dark mode">☾</button><a class="btn"
+                href="contact.html">Let's talk <span>↗</span></a><button class="menu"
+                aria-label="Open navigation">☰</button></div>
+    </header>
+    <main>
+        <section class="wrap pagehead"><span class="eyebrow">Contact</span>
+            <h1>Tell us what<br>you’re thinking.</h1>
+            <p>Share a little about your goals. We’ll get back to you with a thoughtful next step.</p>
+        </section>
+        <section class="wrap contact">
+            <div><span class="eyebrow">A good place to start</span>
+                <h2 style="font:700 34px/1.15 Manrope;letter-spacing:-1.5px">A project, a question, or just a hello.
+                </h2>
+                <p style="color:var(--muted)">Use the form to tell us what you’re working on. We usually reply within
+                    two business days.</p>
+                <p><b>Email</b><br><a href="mailto:hello@devixo.studio">hello@Webfinity.</a></p>
+                <p><b>Based in</b><br>Karachi · Working worldwide</p>
+            </div>
+            <form class="form" novalidate>
+                <div class="field"><label for="name">Your name</label><input id="name" name="name" required
+                        minlength="2" placeholder="Name"><span class="error">Please enter at least 2 characters.</span>
+                </div>
+                <div class="field"><label for="email">Email address</label><input id="email" type="email" name="email"
+                        required placeholder="you@example.com"><span class="error">Please enter a valid email
+                        address.</span></div>
+                <div class="field"><label for="topic">What can we help with?</label><select id="topic" name="topic">
+                        <option>Choose a service</option>
+                        <option>Strategy</option>
+                        <option>Brand identity</option>
+                        <option>Website</option>
+                        <option>Product design</option>
+                        <option>Something else</option>
+                    </select></div>
+                <div class="field"><label for="message">A little about your project</label><textarea id="message"
+                        name="message" required minlength="10"
+                        placeholder="Goals, timing, or anything else we should know"></textarea><span
+                        class="error">Please share at least 10 characters.</span></div><button class="btn light"
+                    type="submit">Send your note ↗</button>
+                <p class="success" role="status">Thanks for reaching out. Your note is ready, and we’ll be in touch
+                    soon.</p><small style="display:block;color:var(--muted);margin-top:12px">This demo validates your
+                    message locally; connect a form service to receive submissions.</small>
+            </form>
+        </section>
+    </main>
+    <footer class="wrap footer"><span>© 2026 Webfinity.</span><span>Thoughtful design. Useful
+            technology.</span><span>Karachi · Working worldwide</span></footer><button class="top"
+        aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+    <script>const form = document.querySelector('form'); form.addEventListener('submit', e => { e.preventDefault(); let valid = true; form.querySelectorAll('input[required],textarea[required]').forEach(el => { const field = el.closest('.field'), ok = el.checkValidity(); field.classList.toggle('invalid', !ok); valid &&= ok }); if (valid) { form.querySelector('.success').style.display = 'block'; form.reset() } }); form.querySelectorAll('input,textarea').forEach(el => el.addEventListener('input', () => el.closest('.field').classList.remove('invalid')));</script>
+</body>
+
+</html>
